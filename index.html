@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Token Capture</title>
+  </head>
+  <body>
+    <h1>Token Captured</h1>
+    <p>Your token: <span id="token"></span></p>
+    <script>
+      // Capture the token from the URL and display it
+      const urlParams = new URLSearchParams(window.location.search);
+      document.getElementById('token').innerText = urlParams.get('token');
+    </script>
+  </body>
+</html>
